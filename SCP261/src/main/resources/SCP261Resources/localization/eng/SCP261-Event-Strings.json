@@ -1,0 +1,19 @@
+{
+
+  "SCP261:VendingMachineEvent": {
+    "NAME": "Vending Machine",
+    "DESCRIPTIONS": [
+      "You stumble across a strange contraption offering you something to quench your thirst.",
+      "You continue on from the machine.",
+      "You don't have enough gold for that."
+    ],
+    "OPTIONS": [
+      "[Buy Unmodded Common Potion] #y",
+      "[Buy Unmodded Uncommon Potion] #y",
+      "[Buy SCP261 Rare Potion] #y",
+      " #yGold.",
+      "[Leave]",
+      "==>"
+    ]
+  }
+}

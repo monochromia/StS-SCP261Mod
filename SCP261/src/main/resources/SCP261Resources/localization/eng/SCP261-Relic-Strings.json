@@ -1,0 +1,19 @@
+{
+  "SCP261:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "SCP261:SadistsTumblerRelic": {
+    "NAME": "Sadist's Tumbler",
+    "FLAVOR": "\"Admire the finer tastes of potions with SCP-209! Side effects may include sadistic tendencies\"",
+    "DESCRIPTIONS": [
+      "On using a potion, add a card to your hand that describes its flavor. It costs 0.",
+      "//TASTES are located in SadistsTumblerRelic.java"]
+      }
+}

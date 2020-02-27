@@ -1,0 +1,82 @@
+{
+  "SCP261:AppleJuicePotion": {
+    "NAME": "Spicy Apple Juice",
+    "DESCRIPTIONS": [
+      "Take #b",
+      " damage. Gain #b",
+      " Max HP."]
+  },
+  "SCP261:BarrettColaPotion": {
+    "NAME": "Barrett Cola",
+    "DESCRIPTIONS": [
+      "Deal #b",
+      " damage."]
+  },
+  "SCP261:BlastolaColaPotion": {
+    "NAME": "Blastola Cola",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " Orb slots. #yChannel #b",
+      " #yFrost."]
+  },
+  "SCP261:BostonMolassesPotion": {
+    "NAME": "Bostonian Molasses Soda",
+    "DESCRIPTIONS": [
+      "Apply #ySlow."]
+  },
+  "SCP261:ClockworkPotion": {
+    "NAME": "Clockwork Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yArtifact.",
+      "Collect all ?? million gears to build [REDACTED]!"]
+  },
+  "SCP261:DietGhostPotion": {
+    "NAME": "Diet Ghost",
+    "DESCRIPTIONS": ["Gain #b", " #yBuffer."]
+  },
+  "SCP261:DewritoBlazePotion": {
+    "NAME": "Dewrito Blaze",
+    "DESCRIPTIONS": [
+      "Whenever you play a card this turn, the enemy loses #b",
+      " HP."]
+  },
+  "SCP261:EnergyGasPotion": {
+    "NAME": "Energy Gas",
+    "DESCRIPTIONS": ["Gain #b", " Energy."]
+  },
+  "SCP261:GirlTearsPotion": {
+    "NAME": "Cute Girl's Tears",
+    "DESCRIPTIONS": [
+      "Choose #b",
+      " cards in your discard pile and return them to your hand. They cost #b0 this turn."]
+  },
+  "SCP261:LaffertyPotion": {
+    "NAME": "Lafferty",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove #b",
+      " cards from your deck.",
+      "Choose ",
+      " Cards to Remove.",
+      "KNOWN ISSUE: Can open map and move on while card removal screen is open, thus cancelling the effects of Lafferty."]
+  },
+  "SCP261:PenguinPunchPotion": {
+    "NAME": "Penguin Punch",
+    "DESCRIPTIONS": [
+      "Deal #b",
+      " damage to ALL enemies."]
+  },
+  "SCP261:SweetSwarmPotion": {
+    "NAME": "Sweet & Sour Swarm",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " #yConstricted."]
+  },
+  "SCP261:ThunderBarPotion": {
+    "NAME": "Thunder Bar",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " Orb slots. #yChannel #b",
+      " #yLightning."]
+  }
+}

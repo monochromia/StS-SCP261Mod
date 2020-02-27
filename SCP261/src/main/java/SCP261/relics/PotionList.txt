@@ -1,0 +1,103 @@
+Full List of Potions explicitly supported by Sadist's Tumbler:
+/* */ <- These potions aren't usable in combat
+
+            case "BloodPotion": Mouthwatering (Reaper)
+            case "ElixirPotion": Smooth (Combust)
+            case "HeartOfIron": Potent (Ragnarok)
+            case "Poison Potion": Bitter (Bane)
+            case "CunningPotion": Sharp (Die Die Die)
+            case "GhostInAJar": Plain (Empty Fist)
+            case "FocusPotion": Energizing (Charge Battery)
+            case "PotionOfCapacity": Cloudy (Steam Barrier)
+            case "EssenceOfDarkness": Bitter (Fasting)
+            case "BottledMiracle": Soft (Sanctity)
+            case "StancePotion": Lingering (Perseverance)
+            case "Ambrosia": Divine (Apotheosis)
+            case "Block Potion": Grainy (Sands of Time)
+            case "Dexterity Potion": Elegant (Acrobatics)
+            case "Energy Potion": Invigorating (Warcry)
+            case "Explosive Potion": Volatile (The Bomb)
+            case "Fire Potion": Fiery (Fiend Fire)
+            case "Strength Potion": Punchy (Uppercut)
+            case "Swift Potion": Runny (FTL)
+            case "Weak Potion": Bland (Empty Fist)
+            case "FearPotion": Invigorating (Adrenaline)
+            case "AttackPotion": Gritty (True Grit)
+            case "SkillPotion": Subtle (Sneaky Strike)
+            case "PowerPotion": Light (Leap)
+            case "ColorlessPotion": Insightful (Evaluate)
+            case "SteroidPotion": Infuriating (Anger)
+            case "SpeedPotion": Teary (Blur)
+            case "BlessingOfTheForge": Hot (Burning Pact)
+            case "Regen Potion": Numbing (Feel No Pain)
+            case "Ancient Potion": Vintage (Discovery)
+            case "LiquidBronze": Metallic (Metallicize)
+            case "GamblersBrew": Vinegary (Alchemize)
+            case "EssenceOfSteel": Powerful (Inflame)
+            case "DuplicationPotion": Unfocused(Madness)
+            case "DistilledChaos": Experimental (Mayhem)
+            case "LiquidMemories": Relaxing (Deep Breath)
+            case "CultistPotion": Rich (Hand Of Greed)
+            case "Fruit Juice": Filling (Feed)
+            case "Snecko Oil": Vinegary (Alchemize)
+           /* case "FairyPotion": */
+            case "SmokeBomb": Smoky (Noxious Fumes)
+            case "EntropicBrew": Vinegary (Alchemize)
+
+            //SCP261 Potions
+            case "AppleJuicePotion": Spicy (Firebreathing)
+            case "BarrettColaPotion": Corked (Corruption)
+            case "BlastolaColaPotion": Fizzy (White Noise)
+            case "BostonMolassesPotion": Viscous (Dark Shackles)
+            case "ClockworkPotion": Metallic (Metallicize)
+            case "DewritoBlazePotion": Disgusting (Regret)
+            case "DietGhostPotion": Tasteless (Empty Body)
+            case "EnergyGasPotion": Invigorating (Adrenaline)
+            case "GirlTearsPotion": Perfumed (Deadly Poison)
+//           /* case "LaffertyPotion": */
+            case "PenguinPunchPotion": Salty (Armaments)
+            case "SweetSwarmPotion": Shocking (Ball Lightning)
+            case "ThunderBarPotion": Invigorating (Charge Battery)
+
+            //Crossover Modded Potions
+                //Infinite Spire
+//            case "infinitespire:BlackPotion": Inedible (Decay)
+                //The Jungle
+//            case "AntidotePotion": Soothing (Panacea)
+//            case "HauntedGourdPotion": Balanced (Iron Wave)
+//            case "JungleJuicePotion": Rotten (Decay)
+//            case "SneckoExtractPotion": Vinegary (Alchemize)
+//            case "SpyderVenomPotion": Acidic (Poisoned Stab)
+//            case "TwistedElixir": Big (Impervious)
+                //Replay The Spire
+//            case "Adrenaline Potion": Refreshing (Bandage Up)
+//            case "Cursed Concoction": Unholy (Exhume)
+//            case "Death Potion": Breathtaking (Choke)
+//            case "Doom Potion": Frigid (Cold Snap)
+//            case "Elixir": Smooth (Combust)
+//            case "Flashbang": Overwhelming (Through Violence)
+//            case "Languid Potion": Viscous (Slimed)
+//            case "LifebloodPotion": Sanguine (Bloodletting)
+//            case "Milkshake": Frigid (Frost)
+//            case "Reflective Coating": Crystalline (Autoshields)
+//            case "ReplayShieldPotion": Neutral (Neutralize)
+//            case "Toxic Potion": Alkaline(Catalyst)
+//            case "Venom Potion": Acidic (Poisoned Stab)
+                //Jedi's Mod
+//            case "jedi:coolantleak": Relaxing (Deep Breath)
+//           /* case "jedi:hoardpotion": */
+//            case "jedi:holywater": Soothing (Panacea)
+//            case "jedi:lesserholywater": Soothing (Panacea)
+//            case "jedi:lessertentaclejuice": Salty (Armaments)
+//           /* case "jedi:mysterypotion": */
+//            case "jedi:specialdeliverypotion": Soft (Sanctity)
+//            case "jedi:tentaclejuice": Salty (Armaments)
+//           /* case "jedi:wingpotion": */
+                //The Sage
+//            case "sagemod:Fata_Morgana": Inventive (Transmutation)
+//            case "sagemod:Flight_Potion": Fizzy (White Noise)
+//            /*case "sagemod:Wine":*/
+                //stsjorbsmod
+                "stsjorbsmod:BurningPotion" Spicy (Firebreathing)
+                "stsjorbsmod:LiquidClarity" Relaxing (Deep Breath)
+                "stsjorbsmod:LiquidVirtue" Refreshing (Bandage Up)
