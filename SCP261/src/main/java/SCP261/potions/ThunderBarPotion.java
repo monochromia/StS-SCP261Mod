@@ -24,13 +24,13 @@ public class ThunderBarPotion extends AbstractPotion {
     public ThunderBarPotion() {
 
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main DefaultMod.java
-        super(NAME, POTION_ID, PotionRarity.RARE, PotionSize.BOTTLE, PotionColor.NONE);
+        super(NAME, POTION_ID, PotionRarity.UNCOMMON, PotionSize.BOTTLE, PotionColor.NONE);
 
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
 
         // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1] + (potency * 5) + DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] + potency / 5 + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
 
         // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
@@ -42,8 +42,8 @@ public class ThunderBarPotion extends AbstractPotion {
     @Override
     public void use(AbstractCreature target) {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
-            this.addToBot(new IncreaseMaxOrbAction(this.potency));
-            for(int i = 0; i < (potency * 5); ++i) {
+            this.addToBot(new IncreaseMaxOrbAction(potency / 5));
+            for(int i = 0; i < (potency); ++i) {
                 this.addToBot(new ChannelAction(new Lightning()));
             }
         }
@@ -55,7 +55,7 @@ public class ThunderBarPotion extends AbstractPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 1;
+        return 5;
     }
 
     public void upgradePotion()

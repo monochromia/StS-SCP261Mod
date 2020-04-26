@@ -6,7 +6,7 @@
     <groupId>SCP261mod</groupId>
     <artifactId>SCP261Mod</artifactId>
     <name>SCP261 Mod</name>
-    <version>0.1</version>
+    <version>0.2</version>
     <description>Adds 13 potions, 1 event, 1 relic. Mod based on: http://www.scp-wiki.net/scp-261 and http://www.scp-wiki.net/scp-209 . Mod is a work in progress, and is intended to eventually add a new type of shop. GitHub: https://github.com/monochromia/StS-SCP261Mod</description>
 
     <properties>

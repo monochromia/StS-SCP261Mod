@@ -121,7 +121,7 @@ public class VendingMachineEvent extends AbstractImageEvent {
                 list.add(new DietGhostPotion());
                 list.add(new EnergyGasPotion());
                 list.add(new GirlTearsPotion());
-                list.add(new LaffertyPotion());
+                //list.add(new LaffertyPotion());
                 list.add(new PenguinPunchPotion());
                 list.add(new SweetSwarmPotion());
                 list.add(new ThunderBarPotion());

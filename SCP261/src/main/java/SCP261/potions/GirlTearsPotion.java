@@ -19,7 +19,7 @@ public class GirlTearsPotion extends AbstractPotion {
     public GirlTearsPotion() {
 
         // The bottle shape and inside is determined by potion size and color. The actual colors are the main DefaultMod.java
-        super(NAME, POTION_ID, PotionRarity.RARE, PotionSize.EYE, PotionColor.NONE);
+        super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.EYE, PotionColor.NONE);
 
         // Potency is the damage/magic number equivalent of potions.
         potency = getPotency();
@@ -36,7 +36,7 @@ public class GirlTearsPotion extends AbstractPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        this.addToBot(new BetterDiscardPileToHandAction(this.potency, 0));
+        this.addToBot(new BetterDiscardPileToHandAction(this.potency));
     }
 
     @Override

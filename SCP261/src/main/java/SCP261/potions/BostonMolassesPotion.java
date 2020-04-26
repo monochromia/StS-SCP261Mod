@@ -27,7 +27,7 @@ public class BostonMolassesPotion extends AbstractPotion {
         potency = getPotency();
 
         // Initialize the Description
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
 
         // Do you throw this potion at an enemy or do you just consume it.
         isThrown = true;
@@ -48,7 +48,7 @@ public class BostonMolassesPotion extends AbstractPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 0;
+        return 2;
     }
 
     public void upgradePotion()

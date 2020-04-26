@@ -3,6 +3,7 @@ package SCP261.potions;
 import SCP261.SCP261Mod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.TheBombPower;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import java.util.Iterator;
@@ -46,18 +48,8 @@ public class PenguinPunchPotion extends AbstractPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        Iterator var2 = AbstractDungeon.getMonsters().monsters.iterator();
-
-        while(var2.hasNext()) {
-            AbstractMonster m = (AbstractMonster)var2.next();
-            if (!m.isDeadOrEscaped()) {
-                this.addToBot(new VFXAction(new ExplosionSmallEffect(m.hb.cX, m.hb.cY), 0.1F));
-            }
-        }
-
-        this.addToBot(new WaitAction(0.5F));
-        this.addToBot(new DamageAllEnemiesAction((AbstractCreature)null, DamageInfo.createDamageMatrix(potency, true), DamageType.NORMAL, AttackEffect.NONE));
-
+        target = AbstractDungeon.player;
+        this.addToBot(new ApplyPowerAction(target, target, new TheBombPower(target, 2, potency), 2));
     }
 
     @Override

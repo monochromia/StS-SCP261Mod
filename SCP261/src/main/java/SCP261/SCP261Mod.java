@@ -358,7 +358,7 @@ public class SCP261Mod implements
         BaseMod.addPotion(DewritoBlazePotion.class, Color.GREEN, Color.ORANGE, (Color)null, DewritoBlazePotion.POTION_ID);
         BaseMod.addPotion(EnergyGasPotion.class, Color.YELLOW, Color.ORANGE, (Color)null, EnergyGasPotion.POTION_ID);
         BaseMod.addPotion(GirlTearsPotion.class, Color.BLUE, LIGHTBLUE, (Color)null, GirlTearsPotion.POTION_ID);
-        BaseMod.addPotion(LaffertyPotion.class, LAFFERTY, Color.YELLOW, (Color)null, LaffertyPotion.POTION_ID);
+        //BaseMod.addPotion(LaffertyPotion.class, LAFFERTY, Color.YELLOW, (Color)null, LaffertyPotion.POTION_ID);
         BaseMod.addPotion(PenguinPunchPotion.class, Color.BLUE, LIGHTBLUE, (Color)null, PenguinPunchPotion.POTION_ID);
         BaseMod.addPotion(SweetSwarmPotion.class, Color.PURPLE, Color.GREEN, (Color)null, SweetSwarmPotion.POTION_ID);
         BaseMod.addPotion(ThunderBarPotion.class, Color.FIREBRICK, Color.RED, (Color)null, ThunderBarPotion.POTION_ID);

@@ -6,12 +6,16 @@
 package SCP261.potions;
 
 import SCP261.SCP261Mod;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
+import com.megacrit.cardcrawl.powers.EnergizedPower;
 
 public class EnergyGasPotion extends AbstractPotion {
 
@@ -30,7 +34,7 @@ public class EnergyGasPotion extends AbstractPotion {
         potency = getPotency();
 
         // Initialize the Description
-        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1] + potency + DESCRIPTIONS[2];
 
         // Do you throw this potion at an enemy or do you just consume it.
         isThrown = false;
@@ -41,7 +45,9 @@ public class EnergyGasPotion extends AbstractPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        this.addToBot(new GainEnergyAction(this.potency));
+        target = AbstractDungeon.player;
+        this.addToBot(new ApplyPowerAction(target, target, new EnergizedPower(target, potency), potency));
+        this.addToBot(new ApplyPowerAction(target, target, new DrawCardNextTurnPower(target, potency), potency));
         //Yellow Smokebomb effect here
     }
 

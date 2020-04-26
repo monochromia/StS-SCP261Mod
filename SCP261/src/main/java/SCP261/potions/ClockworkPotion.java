@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.powers.DrawPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
@@ -43,7 +44,7 @@ public class ClockworkPotion extends AbstractPotion {
     public void use(AbstractCreature target) {
         target = AbstractDungeon.player;
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
-            this.addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new ArtifactPower(target, this.potency), this.potency));
+            this.addToBot(new ApplyPowerAction(target, AbstractDungeon.player, new DrawPower(target, this.potency), this.potency));
             this.addToBot(new TalkAction(true, DESCRIPTIONS[2], 1.0F, 3.0F));
         }
     }
@@ -54,7 +55,7 @@ public class ClockworkPotion extends AbstractPotion {
     // This is your potency.
     @Override
     public int getPotency(final int potency) {
-        return 2;
+        return 1;
     }
 
     public void upgradePotion()

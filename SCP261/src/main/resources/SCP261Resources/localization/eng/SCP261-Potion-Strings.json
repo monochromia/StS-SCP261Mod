@@ -10,7 +10,8 @@
     "NAME": "Barrett Cola",
     "DESCRIPTIONS": [
       "Deal #b",
-      " damage."]
+      " damage. Apply ",
+      " #y Vulnerable"]
   },
   "SCP261:BlastolaColaPotion": {
     "NAME": "Blastola Cola",
@@ -22,13 +23,15 @@
   "SCP261:BostonMolassesPotion": {
     "NAME": "Bostonian Molasses Soda",
     "DESCRIPTIONS": [
-      "Apply #ySlow."]
+      "Apply #b",
+      "#ySlow."
+    ]
   },
   "SCP261:ClockworkPotion": {
     "NAME": "Clockwork Potion",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yArtifact.",
+      "At the start of your turn draw #b",
+      " additional card(s).",
       "Collect all ?? million gears to build [REDACTED]!"]
   },
   "SCP261:DietGhostPotion": {
@@ -43,18 +46,21 @@
   },
   "SCP261:EnergyGasPotion": {
     "NAME": "Energy Gas",
-    "DESCRIPTIONS": ["Gain #b", " Energy."]
+    "DESCRIPTIONS": ["Next turn, draw #b",
+      " cards and gain #b",
+      " Energy"
+    ]
   },
   "SCP261:GirlTearsPotion": {
     "NAME": "Cute Girl's Tears",
     "DESCRIPTIONS": [
       "Choose #b",
-      " cards in your discard pile and return them to your hand. They cost #b0 this turn."]
+      " cards in your discard pile and return them to your hand."]
   },
   "SCP261:LaffertyPotion": {
     "NAME": "Lafferty",
     "DESCRIPTIONS": [
-      "Upon pickup, remove #b",
+      "Upon use, remove #b",
       " cards from your deck.",
       "Choose ",
       " Cards to Remove.",
@@ -63,7 +69,7 @@
   "SCP261:PenguinPunchPotion": {
     "NAME": "Penguin Punch",
     "DESCRIPTIONS": [
-      "Deal #b",
+      "At the end of 2 turns, deal #b",
       " damage to ALL enemies."]
   },
   "SCP261:SweetSwarmPotion": {
